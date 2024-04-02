@@ -1,7 +1,4 @@
-import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
-import ShoppingBagRoundedIcon from '@mui/icons-material/ShoppingBagRounded';
-import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
+
 export default function Widjet({type}) {
     let data;
 
@@ -10,10 +7,10 @@ export default function Widjet({type}) {
             title: 'Users',
             isMoney: false,
             link: 'See all users',
-            icon: <PeopleAltIcon  style={{
-                fontSize: "2rem",
+            // icon: <PeopleAltIcon  style={{
+            //     fontSize: "2rem",
                 
-              }} />
+            //   }} />
 
         }
     }
@@ -23,10 +20,10 @@ export default function Widjet({type}) {
             title: 'Orders',
             isMoney: false,
             link: 'See all orders',
-            icon: <ShoppingBagRoundedIcon style={{
-                fontSize: "2rem",
+            // icon: <ShoppingBagRoundedIcon style={{
+            //     fontSize: "2rem",
 
-              }} />
+            //   }} />
 
         }
     }
@@ -36,10 +33,10 @@ export default function Widjet({type}) {
             title: 'Earnings',
             isMoney: true,
             link: 'View net Earnings',
-            icon: <AttachMoneyIcon style={{
-                fontSize: "2rem",
+            // icon: <AttachMoneyIcon style={{
+            //     fontSize: "2rem",
                 
-              }} />
+            //   }} />
 
         }
     }
@@ -49,10 +46,10 @@ export default function Widjet({type}) {
             title: 'Balance',
             isMoney: true,
             link: 'See Balance',
-            icon: <AccountBalanceWalletIcon style={{
-                fontSize: "2rem",
+            // icon: <AccountBalanceWalletIcon style={{
+            //     fontSize: "2rem",
                 
-              }} />
+            //   }} />
 
         }
     }

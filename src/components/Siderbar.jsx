@@ -1,13 +1,15 @@
-import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
-import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
-import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
-import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
-import PeopleOutlinedIcon from '@mui/icons-material/PeopleOutlined';
-import ProductionQuantityLimitsOutlinedIcon from '@mui/icons-material/ProductionQuantityLimitsOutlined';
-import LocalShippingIcon from '@mui/icons-material/LocalShipping';
-import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
-import HealthAndSafetyIcon from '@mui/icons-material/HealthAndSafety';
-import LogoutIcon from '@mui/icons-material/Logout';
+import { IoIosHome } from "react-icons/io";
+import { FaUserCircle } from "react-icons/fa";
+import { MdOutlineProductionQuantityLimits } from "react-icons/md";
+import { FaJediOrder } from "react-icons/fa6";
+import { CiDeliveryTruck } from "react-icons/ci";
+import { IoIosNotifications } from "react-icons/io";
+import { FcSalesPerformance } from "react-icons/fc";
+import { MdOutlinePayments } from "react-icons/md";
+import { TbReportSearch } from "react-icons/tb";
+import { IoSettings } from "react-icons/io5";
+import { IoLogOut } from "react-icons/io5";
+import { Link } from "react-router-dom";
 export default function Siderbar() {
     return (
         <>
@@ -18,57 +20,58 @@ export default function Siderbar() {
 
                 <div className="center">
                     <ul>
-                        <li>
-                            < GridViewOutlinedIcon className="icons" />
-                            <span>Dashboard</span>
-                        </li>
+                        <Link to="/">
+                            <li>
+                                <IoIosHome className="icon" />
+
+                                <span>Dashboard</span>
+                            </li>
+                        </Link>
+
+
+                        <Link to="/user" className="link">
+                            <li>
+                                <FaUserCircle className="icon" />
+                                <span>Users</span>
+                            </li>
+                        </Link>
+
 
                         <li>
-                            < PeopleOutlinedIcon className="icons" />
-                            <span>Users</span>
-                        </li>
-
-                        <li>
-                            <  ProductionQuantityLimitsOutlinedIcon className="icons" />
+                            <MdOutlineProductionQuantityLimits className="icon" />
                             <span>Products</span>
                         </li>
 
                         <li>
-                            < GridViewOutlinedIcon className="icons" />
+                            <FaJediOrder className="icon" />
                             <span>Orders</span>
                         </li>
 
                         <li>
-                            < LocalShippingIcon className="icons" />
+                            <CiDeliveryTruck className="icon" />
                             <span>Delivery</span>
                         </li>
 
                         <li>
-                            <CircleNotificationsIcon className="icons" />
+                            <IoIosNotifications className="icon" />
                             <span>Notification</span>
                         </li>
 
-                        <li>
-                            < HealthAndSafetyIcon className="icons" />
-                            <span>System Health</span>
-                        </li>
+                      
 
                         <li>
-                            < GridViewOutlinedIcon className="icons" />
-                            <span>Logs</span>
+                            <MdOutlinePayments className="icon" />
+                            <span>Payments</span>
                         </li>
+                      
+
                         <li>
-                            < SettingsApplicationsIcon className="icons" />
+                            <IoSettings className="icon" />
                             <span>Settings</span>
                         </li>
 
                         <li>
-                            <AccountCircleOutlinedIcon className="icons" />
-                            <span>Profile</span>
-                        </li>
-
-                        <li>
-                            <  LogoutIcon className='icons' />
+                            <IoLogOut className="icon" />
                             <span>Logout</span>
                         </li>
 

@@ -123,10 +123,25 @@ nav {
   padding: 1rem;
   padding-left: 5rem;
   top: 0;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: rgba(252, 251, 251, 0.15) 1.95px 1.95px 2.6px;
+  color: white;
+
+}
+.logo_container{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap:  1rem;
+ 
+
 }
 
+.logo{
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
 .search {
   border: 2px solid black;
   display: flex;
@@ -247,4 +262,7 @@ width:100%;
   }
 
   
+}
+.icon{
+  font-size: 2rem;
 }
